@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TechWave</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+    </style>
+</head>
+<body class="inter-font">
+    <header>
+        <nav class="bg-[#1A0B2E] flex justify-around items-center py-[24px]">
+           <div class="text-3xl font-bold text-white ">
+              <h2>Tech<span class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span></h2>
+            </div> 
+            <div>
+                <ul class="hidden lg:flex space-x-[32px] items-center">
+                  <li class="gap-[32px] text-[#FFFFFF] font-medium"><a href="">About</a></li>
+                  <li class="gap-[32px] text-[#FFFFFF] font-medium"><a href="">Episodes</a></li>
+                  <li class="gap-[32px] text-[#FFFFFF] font-medium"><a href="">Host</a></li>
+                  <div class="">
+                    <button class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] px-4 py-2 rounded-4xl text-[#FFFFFF] font-semibold ml-[330px]">Subscribe</button>
+                  </div>
+              </ul>
+                
+               <div id="humberger" class="lg:hidden cursor-pointer text-[#FFFFFF]">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+            </div>
+        </nav>
+        <section id="banner">
+            <div class="bg-[url(../assets/hero-bg.png)] bg-no-repeat bg-cover w-[100%] sm:w-[100%] h-[760px] sm:h-[466px]">
+
+            <div class="">
+
+                <div class="bg-[url(../assets/hero-circle.png)] bg-no-repeat max-w-[100%] h-[350px] w-[350px] object-cover">
+                    <img class="px-[110px] py-[80px]" src="assets/microphone.png"alt="">
+
+                    <div class="mt-[-300px] ">
+                        <button class="font-semibold text-[1.12rem] px-[16px] py-[4px] bg-[#00FF88] rounded-[35px] ">NEW</button>
+                    </div>
+                </div> 
+
+                <div class="text-center">
+                    <h1 class="text-[#FFFFFF] text-[3.75rem] font-extrabold ">TechWave</h1>
+                <p class="mt-[-10px] text-[#ffffffc0]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                </div>
+
+                <div class="mt-[24px] gap-[8px]
+                items-center">
+                <button class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] px-[20px] py-[12px] rounded-4xl text-[#FFFFFF]
+                font-semibold">Listen on Spotify</button>
+                <button class="font-semibold text-[#00FF88] px-[24px] py-[12px] border-2 border-[#00FF88] rounded-4xl ml-[8px]">Subscribe</button>
+             </div>
+                 
+            </div>
+
+            </div>
+        </section>
+    </header>
+</body>
+</html>

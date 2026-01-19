@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TechWave</title> 
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -35,21 +36,37 @@
     "headphone location location"
     "power     power    resource"
 }
+@media screen and (max-width: 567px) {
+    .content{
+    grid-template-areas: 
+    "headphone"
+    "device"
+    "location"
+    "power"
+    "resource" ;
+}
+}
 </style> 
 </head>
 <body class="inter-font">
-    <header>
-        <nav class="m-auto flex justify-around bg-[#1A0B2E] py-[24px] items-center">
-            <div class="text-3xl font-bold text-white ">
+     <header>
+        <nav class="bg-[#1A0B2E] flex justify-around items-center py-[24px]">
+           <div class="text-3xl font-bold text-white ">
               <h2>Tech<span class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span></h2>
-            </div>
-            <ul class="flex gap-[32px] text-[#FFFFFF] font-medium">
-                <li><a href="">About</a></li>
-                <li><a href="">Episodes</a></li>
-                <li><a href="">Host</a></li>
-            </ul>
-            <div class="text-[#FFFFFF] font-semibold ">
-              <button class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] px-4 py-2 rounded-4xl">Subscribe</button>
+            </div> 
+            <div>
+                <ul class="hidden lg:flex space-x-[32px] items-center">
+                  <li class="gap-[32px] text-[#FFFFFF] font-medium"><a href="">About</a></li>
+                  <li class="gap-[32px] text-[#FFFFFF] font-medium"><a href="">Episodes</a></li>
+                  <li class="gap-[32px] text-[#FFFFFF] font-medium"><a href="">Host</a></li>
+                  <div class="">
+                    <button class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] px-4 py-2 rounded-4xl text-[#FFFFFF] font-semibold ml-[330px]">Subscribe</button>
+                  </div>
+              </ul>
+                
+               <div id="humberger" class="lg:hidden cursor-pointer text-[#FFFFFF]">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
             </div>
         </nav>
 
@@ -58,6 +75,10 @@
                 <div class="bg-[url(../assets/hero-circle.png)] bg-no-repeat w-[100%] h-[350px] max-w-[350px] ">
                  <div class="px-[110px] py-[70px]">
                     <img src="assets/microphone.png" alt="">
+
+                    <!-- <div class="mt-[-230px]">
+                        <button class="font-semibold text-[1.12rem] px-[16px] py-[4px] bg-[#00FF88] rounded-[35px] ">NEW</button>
+                    </div> -->
                  </div>
               </div>
              <div class="text-[#FFFFFF] max-w-[550px] text-center mt-[15px]">
@@ -75,8 +96,8 @@
 
     <main>
         <section class="bg-[#1A0B2E] pt-[70px]">
-            <div class="text-center text-[#FFFFFF] max-w-[1200px] m-auto">
-                <h2 class="font-bold text-[3rem]">About the Podcast</h2>
+            <div class="text-center  max-w-[1200px] m-auto">
+                <h2 class="text-[#FFFFFF] font-bold text-[3rem]">About the Podcast</h2>
                 <p class="text-[#ffffffa8] leading-[30px] mt-[10px] ">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology <br>
 We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
 and share stories of personal growth from industry leaders.
@@ -84,7 +105,7 @@ and share stories of personal growth from industry leaders.
 <p class="text-[#ffffffa8] leading-[20px] mt-[60px] mb-[80px]">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
             </div>
             <hr class="max-w-[1200px] m-auto text-[#ffffff46]">
-            <div class="max-w-[1200px] m-auto grid grid-cols-4 gap-[80px] mt-[80px] pb-[120px]">
+            <div class="max-w-[1200px] m-auto grid grid-cols-2 lg:grid-cols-4 gap-[80px] mt-[80px] pb-[120px]">
                 <div class="text-center">
                     <h1 class="text-[#00FF88] font-black text-[3rem] ">150K+</h1>
                     <p class="text-[#ffffffa8]">MONTHLY LISTENERS</p>
@@ -105,7 +126,7 @@ and share stories of personal growth from industry leaders.
         </section>
 
         <section class="bg-[#230E3D] ">
-            <div class="max-w-[1200px] m-auto text-center text-[#FFFFFF] font-bold text-[3rem] pt-[120px] pb-[40px]">
+            <div class=" max-w-[1200px] m-auto text-center text-[#FFFFFF] font-bold text-[3rem] pt-[120px] pb-[40px]">
                 <h2>Why Choose TechWave</h2>
             </div>
 
