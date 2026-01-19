@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>TechWave</title>  
+    <title>TechWave</title> 
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+</style> 
 </head>
-<body>
+<body class="inter-font">
     <header>
-        <nav class="max-w-[1600px] flex justify-around bg-[#1A0B2E] py-[24px] items-center">
+        <nav class="max-w-[1700px] m-auto flex justify-around bg-[#1A0B2E] py-[24px] items-center">
             <div class="text-3xl font-bold text-white ">
               <h2>Tech<span class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span></h2>
             </div>
@@ -22,8 +30,8 @@
             </div>
         </nav>
 
-        <section class="bg-[url(/assets/hero-bg.png)] bg-no-repeat bg-cover w-[100%] h-[640px]">
-            <div class="justify-items-center  pt-[50px]">
+        <section class="bg-[url(/assets/hero-bg.png)] bg-no-repeat bg-cover w-[100%] h-[710px]">
+            <div class="justify-items-center  pt-[100px]">
                 <div class="bg-[url(/assets/hero-circle.png)] bg-no-repeat w-[100%] h-[350px] max-w-[350px] ">
                  <div class="px-[110px] py-[70px]">
                     <img src="assets/microphone.png" alt="">
@@ -41,5 +49,24 @@
          </div>
         </section>
     </header>
+    <!-- <main>
+        <section class="max-w-[1200px] m-auto">
+            <div class="">
+                <h2>About the Podcast</h2>
+                <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+We break down complex topics into digestible insights, explore productivity strategies that actually work,
+and share stories of personal growth from industry leaders.
+
+Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+            <hr>
+            <div class="">
+                <div class="">
+                    <h1>150K+</h1>
+                    <p>Monthly Listeners</p>
+                </div>
+            </div>
+        </section>
+    </main> -->
 </body>
 </html>
