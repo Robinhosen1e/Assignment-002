@@ -12,11 +12,34 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+.headphone{
+    grid-area: headphone;
+}
+.device{
+    grid-area: device;
+}
+.location{
+    grid-area: location;
+}
+.power{
+    grid-area: power;
+}
+.resource{
+    grid-area: resource;
+}
+.content{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "headphone device   device"
+    "headphone location location"
+    "power     power    resource"
+}
 </style> 
 </head>
 <body class="inter-font">
     <header>
-        <nav class="max-w-[1700px] m-auto flex justify-around bg-[#1A0B2E] py-[24px] items-center">
+        <nav class="m-auto flex justify-around bg-[#1A0B2E] py-[24px] items-center">
             <div class="text-3xl font-bold text-white ">
               <h2>Tech<span class="bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span></h2>
             </div>
@@ -57,26 +80,76 @@
 We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
 and share stories of personal growth from industry leaders.
 </p>
-<p class="text-[#ffffffc5] leading-[20px] mt-[60px] mb-[80px]">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+<p class="text-[#ffffffa8] leading-[20px] mt-[60px] mb-[80px]">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
             </div>
             <hr class="max-w-[1200px] m-auto text-[#ffffff46]">
             <div class="max-w-[1200px] m-auto grid grid-cols-4 gap-[80px] mt-[80px] pb-[120px]">
                 <div class="text-center">
                     <h1 class="text-[#00FF88] font-black text-[3rem] ">150K+</h1>
-                    <p class="text-[#ffffffc5]">MONTHLY LISTENERS</p>
+                    <p class="text-[#ffffffa8]">MONTHLY LISTENERS</p>
                 </div>
                 <div class="text-center">
                     <h1 class="text-[#00FF88] font-black text-[3rem] ">200+</h1>
-                    <p class="text-[#ffffffc5]">EPISODES PUBLISHED</p>
+                    <p class="text-[#ffffffa8]">EPISODES PUBLISHED</p>
                 </div>
                 <div class="text-center">
                     <h1 class="text-[#00FF88] font-black text-[3rem] ">4.9*</h1>
-                    <p class="text-[#ffffffc5]">AVERAGE RATING</p>
+                    <p class="text-[#ffffffa8]">AVERAGE RATING</p>
                 </div>
                 <div class=" text-center">
                     <h1 class="text-[#00FF88] font-black text-[3rem] ">50+</h1>
-                    <p class="text-[#ffffffc5]">INDUSTRY EXPERTS</p>
+                    <p class="text-[#ffffffa8]">INDUSTRY EXPERTS</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="bg-[#230E3D] ">
+            <div class="max-w-[1200px] m-auto text-center text-[#FFFFFF] font-bold text-[3rem] pt-[120px] pb-[40px]">
+                <h2>Why Choose TechWave</h2>
+            </div>
+
+            <div class="content max-w-[1200px] m-auto pb-[120px]">
+
+                <div class="headphone bg-[#351165]  px-[40px] py-[107px] rounded-[40px]">
+                    <div class="">
+                        <img src="assets/headphone.png" alt="">
+                    </div>
+                    <h3 class="text-[1.5rem] font-bold text-[#FFFFFF] mt-[16px] mb-[16px]">Premium Audio Quality</h3>
+                    <p class="leading-[24px] text-[#ffffffa8]">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+
+                <div class="device bg-[#351165]  p-[40px] rounded-[40px]">
+                    <div class="">
+                        <img src="assets/device.png" alt="">
+                    </div>
+                    <h3 class="text-[1.5rem] font-bold text-[#FFFFFF] mt-[16px] mb-[16px]">Mobile Friendly</h3>
+                    <p class="leading-[24px] text-[#ffffffa8]">Listen on the go with seamless mobile experience and offline downloads.</p>
+                </div>
+
+                <div class="location bg-[#351165] p-[40px] rounded-[40px]">
+                    <div class="">
+                        <img src="assets/location.png" alt="">
+                    </div>
+                    <h3 class="text-[1.5rem] font-bold text-[#FFFFFF] mt-[16px] mb-[16px]">Global Community</h3>
+                    <p class="leading-[24px] text-[#ffffffa8]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                </div>
+
+                <div class="power bg-[#351165]  p-[40px] rounded-[40px]">
+                    <div class="">
+                        <img src="assets/Screenshot_77.jpg" alt="">
+                    </div>
+                    <h3 class="text-[1.5rem] font-bold text-[#FFFFFF] mt-[16px] mb-[16px]">Exclusive Interviews</h3>
+                    <p class="leading-[24px] text-[#ffffffa8]">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                </div>
+
+                <div class="resource bg-[#351165] p-[40px] rounded-[40px]">
+                    <div class="">
+                        <img src="assets/resource.png" alt="">
+                    </div>
+                    <h3 class="text-[1.5rem] font-bold text-[#FFFFFF] mt-[16px] mb-[16px]">Rich Resources</h3>
+                    <p class="leading-[24px] text-[#ffffffa8]">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                </div>
+
             </div>
         </section>
     </main>
